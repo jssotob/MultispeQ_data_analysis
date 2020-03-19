@@ -1,6 +1,3 @@
-out <- mspq_clean
-
-
 MSPQ_stats <- function(out){ #### function arguments
 
 library(pacman)
