@@ -1,8 +1,11 @@
+
+MSPQ_tidy <- function(df, data_name){
+
+if("pacman" %in% rownames(installed.packages()) == FALSE) {install.packages("pacman")}
 library(pacman)
 p_load(plotly, robustbase, TestDataImputation, dplyr, ggplot2, imputeTS, installr, corrplot, stringr, magrittr, ez, lubridate, tidyverse)
 
-
-MSPQ_tidy <- function(df, data_name){
+  
   #-----delete Plot.1 column (repeated)-----
   r_full <- nrow(df)
   c_full <- ncol(df)
