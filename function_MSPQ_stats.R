@@ -2,7 +2,7 @@ MSPQ_stats <- function(out){ #### function arguments
     
 if("pacman" %in% rownames(installed.packages()) == FALSE) {install.packages("pacman")}
 library(pacman)
-p_load(kmlShape, lmerTest, lme4)
+p_load(kmlShape, lmerTest, lme4, plyr)
     
 df_a <- out[["numeric_dataset"]]
 
